@@ -1,0 +1,11 @@
+﻿@using DSR_Summer_Practice.Data.Models
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Currency сurrency in Model.currencies)
+        {
+            <div class="col-lg-4"> 
+                <h2>Валюта: @сurrency.Name</h2>
+            </div>
+        }
+    }
+</div>

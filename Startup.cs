@@ -33,6 +33,12 @@ namespace DSR_Summer_Practice
                     template: "{controller=Home}/{action=Index}"
                 );
             });
+
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                AppDBContent content = scope.ServiceProvider.GetRequiredService<AppDBContent>();
+                DbObjects.Initial(content);
+            }
         }
     }
 }

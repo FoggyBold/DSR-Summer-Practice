@@ -10,18 +10,18 @@ namespace DSR_Summer_Practice.Data.Repository
             if (!content.Currencies.Any())
             {
                 String URLString = "http://www.cbr.ru/scripts/XML_daily.asp";
-                XmlTextReader reader = new XmlTextReader(URLString);
-                while (reader.Read())
+                XmlDocument xdoc = new XmlDocument();
+                xdoc.Load(URLString);
+                XmlNodeList nodeList = xdoc.DocumentElement.SelectNodes("Valute");
+                foreach (XmlNode node in nodeList)
                 {
-                    if (reader.Name == "Name")
+                    content.Currencies.Add(new Currency
                     {
-                        content.Currencies.AddRange(new Currency { Name = reader.Value });
-                    }
+                        Name = node.ChildNodes[3].ChildNodes[0].Value
+                    });
                 }
                 content.SaveChanges();
             }
-
-            content.SaveChanges();
         }
     }
 }
