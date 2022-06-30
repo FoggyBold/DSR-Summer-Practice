@@ -1,23 +1,28 @@
 ﻿using DSR_Summer_Practice.Data.Models;
 using System.Xml;
+using DSR_Summer_Practice.Interfaces;
 
 namespace DSR_Summer_Practice.Data.Repository
 {
     public class DbObjects
     {
-        public static void Initial(AppDBContent content)
+        private IServiceWithCurrency serviceWithCurrency;
+        public DbObjects(IServiceWithCurrency serviceWithCurrency)
+        {
+            this.serviceWithCurrency = serviceWithCurrency;
+        }
+
+        public void Initial(AppDBContent content)
         {
             if (!content.Currencies.Any())
             {
                 String URLString = "http://www.cbr.ru/scripts/XML_daily.asp";
-                XmlDocument xdoc = new XmlDocument();
-                xdoc.Load(URLString);
-                XmlNodeList nodeList = xdoc.DocumentElement.SelectNodes("Valute");
-                foreach (XmlNode node in nodeList)
+                var currencyNames = serviceWithCurrency.GetCurrencyNames(URLString);
+                foreach (var currency in currencyNames)
                 {
                     content.Currencies.Add(new Currency
                     {
-                        Name = node.ChildNodes[3].ChildNodes[0].Value
+                        Name = currency
                     });
                 }
                 content.SaveChanges();

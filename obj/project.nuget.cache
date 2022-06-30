@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "m9nQjgoSjk/6bSFmUKig3PQLGvuG4b8FNZ4CvoC3+7dZ4J/2tYVCfgYk+PHUITSW36NMvI3WqCrOAKeTSfJ9XQ==",
+  "dgSpecHash": "kFGL8qX8hyta1Vbvwj4zW4kYMYZRJiA4JYh+2m+/03C5sQYv66Vr9IsBPoKgUEi4dkPY5si6fS7CLZs7hW23Mg==",
   "success": true,
   "projectFilePath": "D:\\лабы\\6 семестр\\DSR-Summer-Practice\\DSR-Summer-Practice.csproj",
   "expectedPackageFiles": [
@@ -45,7 +45,7 @@
     "C:\\Users\\vital\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.7.0\\system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
     "C:\\Users\\vital\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\vital\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
-    "C:\\Users\\vital\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
+    "C:\\Users\\vital\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\vital\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
