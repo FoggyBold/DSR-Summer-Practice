@@ -19,8 +19,8 @@ namespace DSR_Summer_Practice
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<AppDBContent>(options => options.UseSqlServer(connection));
             services.AddMvc(options => options.EnableEndpointRouting = false);
-            //services.AddScoped<IServiceWithCurrency, ServiceWithCurrency>();
-            //services.AddScoped<DbObjects>();
+            services.AddScoped<ICurrencyInformation, CurrencyRepository>();
+            services.AddScoped<IServiceWithCurrency, ServiceWithCurrency>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
