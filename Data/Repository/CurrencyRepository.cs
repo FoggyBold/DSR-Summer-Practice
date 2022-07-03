@@ -3,23 +3,23 @@ using DSR_Summer_Practice.Interfaces;
 
 namespace DSR_Summer_Practice.Data.Repository
 {
-    public class CurrencyRepository : ICurrencyInformation
+    public class CurrencyRepository : ICurrencyRepository
     {
         private readonly AppDBContent content;
-        private readonly IServiceWithCurrency serviceWithCurrency;
+        private readonly IXMLService serviceWithCurrency;
 
-        public CurrencyRepository(IServiceWithCurrency serviceWithCurrency, AppDBContent appDBContent)
+        public CurrencyRepository(IXMLService serviceWithCurrency, AppDBContent appDBContent)
         {
             this.serviceWithCurrency = serviceWithCurrency;
             this.content = appDBContent;
         }
 
-        public DataForDrawingFromDb get(int ID, int numberOfDays)
+        public DataForDrawingFromDb getExchangeRate(int ID, int numberOfDays)
         {
             return findInDb(ID, numberOfDays);
         }
 
-        public void addMissingDays(ref List<ExchangeRate> list, string currency, int numberOfDays)
+        private void addMissingDays(ref List<ExchangeRate> list, string currency, int numberOfDays)
         {
             DateTime startDate;
             DateTime endDate; 
@@ -44,7 +44,7 @@ namespace DSR_Summer_Practice.Data.Repository
             }
         }
 
-        public DataForDrawingFromDb findInDb(int ID, int numberOfDays)
+        private DataForDrawingFromDb findInDb(int ID, int numberOfDays)
         {
             var date = DateTime.Now.AddDays(numberOfDays * (-1));
             var samplingFromDb = content.ExchangeRates.Where(el => el.ID == ID && el.DateTime > date).ToList();
@@ -61,6 +61,11 @@ namespace DSR_Summer_Practice.Data.Repository
             }
 
             return new(samplingFromDb, nameCurrency);
+        }
+
+        public IEnumerable<Currency> getAllNames()
+        {
+            return content.Currencies.ToList();
         }
     }
 }

@@ -6,8 +6,8 @@ namespace DSR_Summer_Practice.Data.Repository
 {
     public class DbObjects
     {
-        private IServiceWithCurrency serviceWithCurrency;
-        public DbObjects(IServiceWithCurrency serviceWithCurrency)
+        private IXMLService serviceWithCurrency;
+        public DbObjects(IXMLService serviceWithCurrency)
         {
             this.serviceWithCurrency = serviceWithCurrency;
         }

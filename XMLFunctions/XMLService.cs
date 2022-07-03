@@ -4,7 +4,7 @@ using System.Xml;
 
 namespace DSR_Summer_Practice.XMLFunctions
 {
-    public class ServiceWithCurrency : IServiceWithCurrency
+    public class XMLService : IXMLService
     {
         public IEnumerable<string> GetCurrencyNames(String URLString)
         {

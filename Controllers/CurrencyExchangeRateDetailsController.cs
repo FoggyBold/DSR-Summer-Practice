@@ -6,9 +6,9 @@ namespace DSR_Summer_Practice.Controllers
 {
     public class CurrencyExchangeRateDetailsController : Controller
     {
-        private readonly ICurrencyInformation currencyInformation;
+        private readonly ICurrencyRepository currencyInformation;
 
-        public CurrencyExchangeRateDetailsController(ICurrencyInformation currencyInformation)
+        public CurrencyExchangeRateDetailsController(ICurrencyRepository currencyInformation)
         {
             this.currencyInformation = currencyInformation;            
         }
