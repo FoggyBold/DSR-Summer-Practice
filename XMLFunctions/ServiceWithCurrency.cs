@@ -1,4 +1,5 @@
 ﻿using DSR_Summer_Practice.Interfaces;
+using DSR_Summer_Practice.Data.Models;
 using System.Xml;
 
 namespace DSR_Summer_Practice.XMLFunctions
@@ -16,6 +17,10 @@ namespace DSR_Summer_Practice.XMLFunctions
                 res.Add(node.ChildNodes[3].ChildNodes[0].Value);
             }
             return res;
+        }
+        public IEnumerable<ExchangeRate> GetInformationAboutExchangeRate(DateTime first, DateTime second, string currency)
+        {
+            return null;
         }
     }
 }
