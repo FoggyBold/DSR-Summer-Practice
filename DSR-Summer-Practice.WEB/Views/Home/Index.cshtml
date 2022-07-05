@@ -1,0 +1,12 @@
+﻿@using DSR_Summer_Practice.WEB.Data.Models
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Currency сurrency in Model.currencies)
+        {
+            <label class="container">@Html.ActionLink(сurrency.Name, "Index", "CurrencyExchangeRateDetails", new { id = сurrency.ID })
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        }
+    }
+</div>

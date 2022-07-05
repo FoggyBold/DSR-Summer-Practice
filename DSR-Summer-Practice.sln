@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSR-Summer-Practice", "DSR-Summer-Practice.csproj", "{33C88427-5A3E-4182-81D3-2A067C73C51B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSR-Summer-Practice.DAL", "DSR-Summer-Practice.DAL\DSR-Summer-Practice.DAL.csproj", "{93D10480-EA7D-4D3D-BCDF-087AC63000D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSR-Summer-Practice.WEB", "DSR-Summer-Practice.WEB\DSR-Summer-Practice.WEB.csproj", "{A3E29B55-453F-4CBA-A0F6-514F6DD65ADE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{33C88427-5A3E-4182-81D3-2A067C73C51B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{33C88427-5A3E-4182-81D3-2A067C73C51B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{33C88427-5A3E-4182-81D3-2A067C73C51B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{33C88427-5A3E-4182-81D3-2A067C73C51B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D10480-EA7D-4D3D-BCDF-087AC63000D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D10480-EA7D-4D3D-BCDF-087AC63000D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D10480-EA7D-4D3D-BCDF-087AC63000D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E29B55-453F-4CBA-A0F6-514F6DD65ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E29B55-453F-4CBA-A0F6-514F6DD65ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E29B55-453F-4CBA-A0F6-514F6DD65ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E29B55-453F-4CBA-A0F6-514F6DD65ADE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
