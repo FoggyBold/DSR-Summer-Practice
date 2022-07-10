@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>DSR_Summer_Practice.Services</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DSR-Summer-Practice.DAL\DSR-Summer-Practice.DAL.csproj" />
+    <ProjectReference Include="..\DSR-Summer-Practice.Shared\DSR-Summer-Practice.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
