@@ -27,7 +27,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\лабы\\6 семестр\\DSR-Summer-Practice\\DSR-Summer-Practice.Shared\\DSR-Summer-Practice.Shared.csproj": {
+                "projectPath": "D:\\лабы\\6 семестр\\DSR-Summer-Practice\\DSR-Summer-Practice.Shared\\DSR-Summer-Practice.Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -49,6 +53,60 @@
               "version": "[6.0.6, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\лабы\\6 семестр\\DSR-Summer-Practice\\DSR-Summer-Practice.Shared\\DSR-Summer-Practice.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\лабы\\6 семестр\\DSR-Summer-Practice\\DSR-Summer-Practice.Shared\\DSR-Summer-Practice.Shared.csproj",
+        "projectName": "DSR-Summer-Practice.Shared",
+        "projectPath": "D:\\лабы\\6 семестр\\DSR-Summer-Practice\\DSR-Summer-Practice.Shared\\DSR-Summer-Practice.Shared.csproj",
+        "packagesPath": "C:\\Users\\vital\\.nuget\\packages\\",
+        "outputPath": "D:\\лабы\\6 семестр\\DSR-Summer-Practice\\DSR-Summer-Practice.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vital\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",

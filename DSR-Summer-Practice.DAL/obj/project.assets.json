@@ -472,6 +472,16 @@
             "rid": "win"
           }
         }
+      },
+      "DSR-Summer-Practice.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DSR-Summer-Practice.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DSR-Summer-Practice.Shared.dll": {}
+        }
       }
     }
   },
@@ -1533,10 +1543,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DSR-Summer-Practice.Shared/1.0.0": {
+      "type": "project",
+      "path": "../DSR-Summer-Practice.Shared/DSR-Summer-Practice.Shared.csproj",
+      "msbuildProject": "../DSR-Summer-Practice.Shared/DSR-Summer-Practice.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DSR-Summer-Practice.Shared >= 1.0.0",
       "EntityFramework >= 6.4.4",
       "Microsoft.EntityFrameworkCore >= 6.0.6"
     ]
@@ -1567,7 +1583,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\лабы\\6 семестр\\DSR-Summer-Practice\\DSR-Summer-Practice.Shared\\DSR-Summer-Practice.Shared.csproj": {
+              "projectPath": "D:\\лабы\\6 семестр\\DSR-Summer-Practice\\DSR-Summer-Practice.Shared\\DSR-Summer-Practice.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

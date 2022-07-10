@@ -20,7 +20,12 @@
       "ProjectGuid": "c43195c0-c327-40e4-956d-ade65d085ce8",
       "DisplayName": "DSR-Summer-Practice.WEB",
       "ColorIndex": 2
+    },
+    "a3e29b55-453f-4cba-a0f6-514f6dd65ade": {
+      "ProjectGuid": "a3e29b55-453f-4cba-a0f6-514f6dd65ade",
+      "DisplayName": "DSR-Summer-Practice.WEB",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

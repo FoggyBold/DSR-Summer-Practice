@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSR-Summer-Practice.DAL", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSR-Summer-Practice.WEB", "DSR-Summer-Practice.WEB\DSR-Summer-Practice.WEB.csproj", "{A3E29B55-453F-4CBA-A0F6-514F6DD65ADE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSR-Summer-Practice.Services", "DSR-Summer-Practice.Services\DSR-Summer-Practice.Services.csproj", "{A577E4EE-E611-428E-88F5-6F5A48F80F2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSR-Summer-Practice.Shared", "DSR-Summer-Practice.Shared\DSR-Summer-Practice.Shared.csproj", "{D63788D4-AF0D-4485-9398-5F58B80C3C64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{A3E29B55-453F-4CBA-A0F6-514F6DD65ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3E29B55-453F-4CBA-A0F6-514F6DD65ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3E29B55-453F-4CBA-A0F6-514F6DD65ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A577E4EE-E611-428E-88F5-6F5A48F80F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A577E4EE-E611-428E-88F5-6F5A48F80F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A577E4EE-E611-428E-88F5-6F5A48F80F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A577E4EE-E611-428E-88F5-6F5A48F80F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D63788D4-AF0D-4485-9398-5F58B80C3C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D63788D4-AF0D-4485-9398-5F58B80C3C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D63788D4-AF0D-4485-9398-5F58B80C3C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D63788D4-AF0D-4485-9398-5F58B80C3C64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
