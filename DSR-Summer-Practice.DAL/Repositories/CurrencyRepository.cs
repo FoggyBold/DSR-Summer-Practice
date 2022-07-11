@@ -15,6 +15,7 @@ namespace DSR_Summer_Practice.DAL.Repositories
         public void Create(Currency item)
         {
             dbContext.Currencies.Add(item);
+            dbContext.SaveChanges();
         }
 
         public void Delete(int id)
@@ -23,6 +24,7 @@ namespace DSR_Summer_Practice.DAL.Repositories
             if(currency != null)
             {
                 dbContext.Currencies.Remove(currency);
+                dbContext.SaveChanges();
             }
         }
 
@@ -44,6 +46,7 @@ namespace DSR_Summer_Practice.DAL.Repositories
         public void Update(Currency item)
         {
             dbContext.Entry(item).State = EntityState.Modified;
+            dbContext.SaveChanges();
         }
     }
 }

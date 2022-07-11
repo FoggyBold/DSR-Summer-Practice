@@ -15,6 +15,7 @@ namespace DSR_Summer_Practice.DAL.Repositories
         public void Create(ExchangeRate item)
         {
             dbContext.ExchangeRates.Add(item);
+            dbContext.SaveChanges();
         }
 
         public void Delete(int id)
@@ -23,6 +24,7 @@ namespace DSR_Summer_Practice.DAL.Repositories
             if (exchangeRate != null)
             {
                 dbContext.ExchangeRates.Remove(exchangeRate);
+                dbContext.SaveChanges();
             }
         }
 
@@ -44,6 +46,7 @@ namespace DSR_Summer_Practice.DAL.Repositories
         public void Update(ExchangeRate item)
         {
             dbContext.Entry(item).State = EntityState.Modified;
+            dbContext.SaveChanges();
         }
     }
 }

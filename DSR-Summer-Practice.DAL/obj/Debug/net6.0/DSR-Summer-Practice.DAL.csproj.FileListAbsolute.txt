@@ -1,0 +1,17 @@
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\obj\Debug\net6.0\DSR-Summer-Practice.DAL.csproj.AssemblyReference.cache
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\obj\Debug\net6.0\DSR-Summer-Practice.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\obj\Debug\net6.0\DSR-Summer-Practice.DAL.AssemblyInfoInputs.cache
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\obj\Debug\net6.0\DSR-Summer-Practice.DAL.AssemblyInfo.cs
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\obj\Debug\net6.0\DSR-Summer-Practice.DAL.csproj.CoreCompileInputs.cache
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\bin\Debug\net6.0\DSR-Summer-Practice.DAL.deps.json
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\bin\Debug\net6.0\DSR-Summer-Practice.DAL.runtimeconfig.json
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\bin\Debug\net6.0\DSR-Summer-Practice.DAL.dll
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\bin\Debug\net6.0\ref\DSR-Summer-Practice.DAL.dll
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\bin\Debug\net6.0\DSR-Summer-Practice.DAL.pdb
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\bin\Debug\net6.0\DSR-Summer-Practice.Shared.dll
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\bin\Debug\net6.0\DSR-Summer-Practice.Shared.pdb
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\obj\Debug\net6.0\DSR-Summer-Practice.DAL.csproj.CopyComplete
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\obj\Debug\net6.0\DSR-Summer-Practice.DAL.dll
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\obj\Debug\net6.0\ref\DSR-Summer-Practice.DAL.dll
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\obj\Debug\net6.0\DSR-Summer-Practice.DAL.pdb
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.DAL\obj\Debug\net6.0\DSR-Summer-Practice.DAL.genruntimeconfig.cache

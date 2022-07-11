@@ -1,6 +1,5 @@
 ﻿using DSR_Summer_Practice.DAL.Entities;
 using System.Data.Entity;
-using System.Xml;
 using DSR_Summer_Practice.Shared.Interfaces;
 using DSR_Summer_Practice.Shared.Entieties;
 
