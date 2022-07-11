@@ -1,7 +1,9 @@
-﻿using DSR_Summer_Practice.WEB.Data.Repository;
+﻿using DSR_Summer_Practice.DAL.EF;
+using DSR_Summer_Practice.DAL.Interfaces;
+using DSR_Summer_Practice.DAL.Repositories;
+using DSR_Summer_Practice.Services.Interfaces;
+using DSR_Summer_Practice.Services.Services;
 using Microsoft.EntityFrameworkCore;
-using DSR_Summer_Practice.WEB.Interfaces;
-using DSR_Summer_Practice.WEB.XMLFunctions;
 
 namespace DSR_Summer_Practice.WEB
 {
@@ -17,15 +19,15 @@ namespace DSR_Summer_Practice.WEB
         public void ConfigureServices(IServiceCollection services)
         {
             string connection = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<AppDBContent>(options => options.UseSqlServer(connection));
             services.AddMvc(options => options.EnableEndpointRouting = false);
-            services.AddScoped<ICurrencyRepository, CurrencyRepository>();
-            services.AddScoped<IXMLService, XMLService>();
+            services.AddScoped<IExchangeRateService, ExchangeRateService>();
+            services.AddSingleton<AppDBContext>(new AppDBContext(connection));
+            services.AddScoped<IUnitOfWork, EFUnitOfWork>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if(env.IsDevelopment())
+            if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
@@ -37,12 +39,9 @@ namespace DSR_Summer_Practice.WEB
                     template: "{controller=Home}/{action=Index}"
                 );
             });
-
             using (var scope = app.ApplicationServices.CreateScope())
             {
-                AppDBContent content = scope.ServiceProvider.GetRequiredService<AppDBContent>();
-                DbObjects dbObjects = new(new XMLService());
-                dbObjects.Initial(content);
+                AppDBContext content = scope.ServiceProvider.GetRequiredService<AppDBContext>();
             }
         }
     }

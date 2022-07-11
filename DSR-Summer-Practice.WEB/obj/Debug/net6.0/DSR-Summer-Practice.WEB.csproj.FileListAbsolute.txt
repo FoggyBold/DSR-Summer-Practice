@@ -69,3 +69,10 @@ D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.WEB\obj\Deb
 D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.WEB\obj\Debug\net6.0\ref\DSR-Summer-Practice.WEB.dll
 D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.WEB\obj\Debug\net6.0\DSR-Summer-Practice.WEB.pdb
 D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.WEB\obj\Debug\net6.0\DSR-Summer-Practice.WEB.genruntimeconfig.cache
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.WEB\bin\Debug\net6.0\Ninject.dll
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.WEB\bin\Debug\net6.0\DSR-Summer-Practice.DAL.dll
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.WEB\bin\Debug\net6.0\DSR-Summer-Practice.Services.dll
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.WEB\bin\Debug\net6.0\DSR-Summer-Practice.Shared.dll
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.WEB\bin\Debug\net6.0\DSR-Summer-Practice.Services.pdb
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.WEB\bin\Debug\net6.0\DSR-Summer-Practice.DAL.pdb
+D:\лабы\6 семестр\DSR-Summer-Practice\DSR-Summer-Practice.WEB\bin\Debug\net6.0\DSR-Summer-Practice.Shared.pdb
