@@ -13,6 +13,21 @@ namespace DSR_Summer_Practice.Services.Services
         {
             database = datebase;
         }
+
+        public IEnumerable<Currency> GetCurrencies()
+        {
+            List<Currency> res = new List<Currency>();
+            var currencies = database.Currencies.GetAll();
+            foreach (var cur in currencies)
+            {
+                res.Add(new Currency {
+                    ID = cur.ID,
+                    Name = cur.Name
+                });
+            }
+            return res;
+        }
+
         public IEnumerable<ExchangeRate> GetExchangeRates(int id, DateTime start, DateTime end)
         {
             List<ExchangeRate> rates = new List<ExchangeRate>();
