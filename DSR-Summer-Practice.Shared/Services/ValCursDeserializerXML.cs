@@ -15,6 +15,11 @@ namespace DSR_Summer_Practice.Shared.Services
         public ValCurs deserialize(string url)
         {
             string xml;
+            //using (var httpClient = new HttpClient())
+            //{
+            //    httpClient.BaseAddress = new Uri(url);
+            //    xml = httpClient.
+            //}
             using (var webClient = new WebClient())
             {
                 xml = webClient.DownloadString(url);

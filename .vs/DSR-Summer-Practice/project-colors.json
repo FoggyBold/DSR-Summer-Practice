@@ -25,7 +25,17 @@
       "ProjectGuid": "a3e29b55-453f-4cba-a0f6-514f6dd65ade",
       "DisplayName": "DSR-Summer-Practice.WEB",
       "ColorIndex": 3
+    },
+    "a577e4ee-e611-428e-88f5-6f5a48f80f2e": {
+      "ProjectGuid": "a577e4ee-e611-428e-88f5-6f5a48f80f2e",
+      "DisplayName": "DSR-Summer-Practice.Services",
+      "ColorIndex": 4
+    },
+    "d63788d4-af0d-4485-9398-5f58b80c3c64": {
+      "ProjectGuid": "d63788d4-af0d-4485-9398-5f58b80c3c64",
+      "DisplayName": "DSR-Summer-Practice.Shared",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 6
 }

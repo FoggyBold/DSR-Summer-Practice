@@ -11,17 +11,6 @@ namespace DSR_Summer_Practice.Shared.Repositories
         {
             this.deserializerXML = deserializerXML;
         }
-        /// <summary>
-        /// Returns a list of a certain currency for a certain period of days
-        /// </summary>
-        /// <param name="start">start date</param>
-        /// <param name="end">end date</param>
-        /// <param name="name">name of currency</param>
-        /// <returns>list of valCurs</returns>
-        public IEnumerable<ValCurs> find(DateTime start, DateTime end, String name)
-        {
-            return deserializeOnURL(start, end).Where(el => el.Name == name);
-        }
 
         /// <summary>
         /// Returns a list of currencies for a certain period of days
