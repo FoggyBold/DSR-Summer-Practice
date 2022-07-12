@@ -863,7 +863,8 @@
         "dependencies": {
           "DSR-Summer-Practice.Shared": "1.0.0",
           "EntityFramework": "6.4.4",
-          "Microsoft.EntityFrameworkCore": "6.0.6"
+          "Microsoft.EntityFrameworkCore": "6.0.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6"
         },
         "compile": {
           "bin/placeholder/DSR-Summer-Practice.DAL.dll": {}

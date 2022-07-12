@@ -3,6 +3,8 @@ using DSR_Summer_Practice.DAL.Interfaces;
 using DSR_Summer_Practice.DAL.Repositories;
 using DSR_Summer_Practice.Services.Interfaces;
 using DSR_Summer_Practice.Services.Services;
+using DSR_Summer_Practice.Shared.Repositories;
+using DSR_Summer_Practice.Shared.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace DSR_Summer_Practice.WEB
@@ -20,9 +22,10 @@ namespace DSR_Summer_Practice.WEB
         {
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddMvc(options => options.EnableEndpointRouting = false);
-            services.AddScoped<IExchangeRateService, ExchangeRateService>();
-            services.AddSingleton<AppDBContext>(new AppDBContext(connection));
+            services.AddDbContext<AppDBContext>(options => options.UseSqlServer(connection));
+            //services.AddSingleton(new AppDBContext(connection));
             services.AddScoped<IUnitOfWork, EFUnitOfWork>();
+            services.AddScoped<IExchangeRateService, ExchangeRateService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -42,6 +45,8 @@ namespace DSR_Summer_Practice.WEB
             using (var scope = app.ApplicationServices.CreateScope())
             {
                 AppDBContext content = scope.ServiceProvider.GetRequiredService<AppDBContext>();
+                DbObjects dbObjects = new DbObjects(new ValCursRepository(new ValCursDeserializerXML()));
+                dbObjects.Initial(content);
             }
         }
     }

@@ -10,6 +10,10 @@ namespace DSR_Summer_Practice.DAL.Repositories
         private AppDBContext dbContext;
         private CurrencyRepository currencyRepository;
         private ExchangeRateRepository exchangeRateRepository;
+        public EFUnitOfWork(AppDBContext context)
+        {
+            dbContext = context;
+        }
         public IRepository<Currency> Currencies
         {
             get

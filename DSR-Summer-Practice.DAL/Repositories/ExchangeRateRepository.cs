@@ -42,11 +42,5 @@ namespace DSR_Summer_Practice.DAL.Repositories
         {
             return dbContext.ExchangeRates;
         }
-
-        public void Update(ExchangeRate item)
-        {
-            dbContext.Entry(item).State = EntityState.Modified;
-            dbContext.SaveChanges();
-        }
     }
 }

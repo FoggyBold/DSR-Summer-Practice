@@ -6,10 +6,13 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSR-Summer-Practice.DAL", "DSR-Summer-Practice.DAL\DSR-Summer-Practice.DAL.csproj", "{93D10480-EA7D-4D3D-BCDF-087AC63000D1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSR-Summer-Practice.WEB", "DSR-Summer-Practice.WEB\DSR-Summer-Practice.WEB.csproj", "{A3E29B55-453F-4CBA-A0F6-514F6DD65ADE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{93D10480-EA7D-4D3D-BCDF-087AC63000D1} = {93D10480-EA7D-4D3D-BCDF-087AC63000D1}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSR-Summer-Practice.Services", "DSR-Summer-Practice.Services\DSR-Summer-Practice.Services.csproj", "{A577E4EE-E611-428E-88F5-6F5A48F80F2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSR-Summer-Practice.Services", "DSR-Summer-Practice.Services\DSR-Summer-Practice.Services.csproj", "{A577E4EE-E611-428E-88F5-6F5A48F80F2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSR-Summer-Practice.Shared", "DSR-Summer-Practice.Shared\DSR-Summer-Practice.Shared.csproj", "{D63788D4-AF0D-4485-9398-5F58B80C3C64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSR-Summer-Practice.Shared", "DSR-Summer-Practice.Shared\DSR-Summer-Practice.Shared.csproj", "{D63788D4-AF0D-4485-9398-5F58B80C3C64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +21,7 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{93D10480-EA7D-4D3D-BCDF-087AC63000D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D10480-EA7D-4D3D-BCDF-087AC63000D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93D10480-EA7D-4D3D-BCDF-087AC63000D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93D10480-EA7D-4D3D-BCDF-087AC63000D1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A3E29B55-453F-4CBA-A0F6-514F6DD65ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

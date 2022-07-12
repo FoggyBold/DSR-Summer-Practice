@@ -42,11 +42,5 @@ namespace DSR_Summer_Practice.DAL.Repositories
         {
             return dbContext.Currencies;
         }
-
-        public void Update(Currency item)
-        {
-            dbContext.Entry(item).State = EntityState.Modified;
-            dbContext.SaveChanges();
-        }
     }
 }
