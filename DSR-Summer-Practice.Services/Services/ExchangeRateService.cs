@@ -41,8 +41,8 @@ namespace DSR_Summer_Practice.Services.Services
                 {
                     var temp = new DSR_Summer_Practice.DAL.Entities.ExchangeRate {
                         CurrencyId = id,
-                        DateTime = day.Date,
-                        Value = day.Valute.First(el => el.Name == currency.Name).Value
+                        DateTime = Convert.ToDateTime(day.Date),
+                        Value = Convert.ToDouble(day.Valute.First(el => el.Name == currency.Name).Value)
                     };
                     if (exchangeRate == null || exchangeRate.FirstOrDefault(el => el.CurrencyId == id && el.Value == temp.Value && el.DateTime == temp.DateTime) == null)
                     {

@@ -23,7 +23,6 @@ namespace DSR_Summer_Practice.WEB
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddDbContext<AppDBContext>(options => options.UseSqlServer(connection));
-            //services.AddSingleton(new AppDBContext(connection));
             services.AddScoped<IUnitOfWork, EFUnitOfWork>();
             services.AddScoped<IExchangeRateService, ExchangeRateService>();
         }

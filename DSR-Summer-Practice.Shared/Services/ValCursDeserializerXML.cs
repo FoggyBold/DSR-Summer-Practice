@@ -1,6 +1,7 @@
 ﻿using DSR_Summer_Practice.Shared.Entieties;
 using DSR_Summer_Practice.Shared.Interfaces;
 using System.Net;
+using System.Text;
 using System.Xml.Serialization;
 
 namespace DSR_Summer_Practice.Shared.Services
@@ -14,16 +15,15 @@ namespace DSR_Summer_Practice.Shared.Services
         /// <returns>ValCurs</returns>
         public ValCurs deserialize(string url)
         {
-            string xml;
-            //using (var httpClient = new HttpClient())
-            //{
-            //    httpClient.BaseAddress = new Uri(url);
-            //    xml = httpClient.
-            //}
+            byte[] bytes;
             using (var webClient = new WebClient())
             {
-                xml = webClient.DownloadString(url);
+                bytes = webClient.DownloadData(url);
             }
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+            Encoding encoding1251 = Encoding.GetEncoding("windows-1251");
+            var convertedBytes = Encoding.Convert(encoding1251, Encoding.UTF8, bytes);
+            string xml = Encoding.UTF8.GetString(convertedBytes);
             XmlSerializer serializer = new XmlSerializer(typeof(ValCurs));
             ValCurs res;
             using (StringReader reader = new StringReader(xml))

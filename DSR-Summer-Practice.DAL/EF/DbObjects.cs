@@ -13,8 +13,8 @@ namespace DSR_Summer_Practice.DAL.EF
         }
         public void Initial(AppDBContext context)
         {
-            if (context.Currencies == null)
-            {
+            //if (context.Currencies == null)
+            //{
                 var currencies = repository.get();
                 foreach (var currency in currencies.Valute)
                 {
@@ -24,7 +24,7 @@ namespace DSR_Summer_Practice.DAL.EF
                     });
                 }
                 context.SaveChanges();
-            }
+            //}
         }
     }
 }
