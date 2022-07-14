@@ -2,6 +2,8 @@
 using DSR_Summer_Practice.Services.Interfaces;
 using DSR_Summer_Practice.DAL.Interfaces;
 using DSR_Summer_Practice.Shared.Entieties;
+using DSR_Summer_Practice.Shared.Repositories;
+using DSR_Summer_Practice.Shared.Services;
 
 namespace DSR_Summer_Practice.Services.Services
 {
@@ -12,6 +14,7 @@ namespace DSR_Summer_Practice.Services.Services
         public ExchangeRateService(IUnitOfWork datebase)
         {
             database = datebase;
+            this.valCursRepository = new ValCursRepository(new ValCursDeserializerXML());
         }
 
         public IEnumerable<Currency> GetCurrencies()
