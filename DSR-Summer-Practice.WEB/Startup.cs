@@ -3,6 +3,7 @@ using DSR_Summer_Practice.DAL.Interfaces;
 using DSR_Summer_Practice.DAL.Repositories;
 using DSR_Summer_Practice.Services.Interfaces;
 using DSR_Summer_Practice.Services.Services;
+using DSR_Summer_Practice.Shared.Entieties;
 using DSR_Summer_Practice.Shared.Repositories;
 using DSR_Summer_Practice.Shared.Services;
 using Microsoft.EntityFrameworkCore;

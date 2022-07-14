@@ -3,8 +3,7 @@
     //The value at a certain point in time
     public class ExchangeRate
     {
-        public int ID { get; set; }
-        public int CurrencyId { get; set; }
+        public string CurrencyName { get; set; }
         public DateTime DateTime { get; set; }
         public double Value { get; set; }
 
