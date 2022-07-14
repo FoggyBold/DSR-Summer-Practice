@@ -26,9 +26,14 @@ namespace DSR_Summer_Practice.Shared.Repositories
         private IEnumerable<ValCurs> deserializeOnURL(DateTime start, DateTime end)
         {
             List<ValCurs> valCurs = new List<ValCurs>();
-            for (var i = start; i <= end; i.AddDays(1))
+            for (var i = start; i <= end; i = i.AddDays(1))
             {
-                valCurs.Add(deserializerXML.deserialize(url + $"?date_req={i.Day}/{i.Month}/{i.Year}"));
+                string day = i.Day.ToString().Length == 1 ? $"0{i.Day}" : i.Day.ToString();
+                string month = i.Month.ToString().Length == 1 ? $"0{i.Month}" : i.Month.ToString();
+                var temp = deserializerXML.deserialize(url + $"?date_req={day}/{month}/{i.Year}");
+                temp.Date = i.ToString();
+                //valCurs.Add(deserializerXML.deserialize(url + $"?date_req={day}/{month}/{i.Year}"));
+                valCurs.Add(temp);
             }
             return valCurs;
         }
